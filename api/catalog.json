@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Ender's game",
+    "author": "Orson Scott Card"
+  },
+  {
+    "id": 2,
+    "name": "Sound of Magic",
+    "author": "Terry Pratchett"
+  },
+  {
+    "id": 3,
+    "name": "Ender's shadow",
+    "author": "Orson Scott Card"
+  },
+  {
+    "id": 4,
+    "name": "Shadow of Puppets",
+    "author": "Orson Scott Card"
+  },
+  {
+    "id": 5,
+    "name": "Good Omens",
+    "author": "Orson Scott Card"
+  },
+  {
+    "id": 6,
+    "name": "Small Gods",
+    "author": "Orson Scott Card"
+  },
+  {
+    "id": 7,
+    "name": "Hitchhikers Guide of Galaxy",
+    "author": "Douglas Adams"
+  },
+  {
+    "id": 8,
+    "name": "The Martian",
+    "author": "Andy Weir"
+  }
+]

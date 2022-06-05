@@ -3,6 +3,8 @@ const cors = require('cors');
 const app = express()
 const port = 3001;
 
+const catalog = require('./catalog.json');
+
 app.use(express.json());
 app.use(cors());
 
@@ -22,8 +24,10 @@ app.post('/login', (req, res) => {
     } else {
         res.status(200).send({name: username});
     }
+});
 
-
+app.get('/catalog/all', (req, res) => {
+    res.send(catalog);
 })
 
 
