@@ -1,11 +1,13 @@
 import React, {FC, useEffect, useState} from 'react';
 import styles from './Catalog.module.css';
 import {getCatalog} from "../../services/CatalogService";
+import Book from "../Book/Book";
+import {BookType} from "./BookType";
 
 interface CatalogProps {}
 
 const Catalog: FC<CatalogProps> = () => {
-    const [catalog, setCatalog] = useState([{}]);
+    const [catalog, setCatalog] = useState<BookType[]>([]);
 
     useEffect(() => {
         getCatalog().then(({data}) => {
@@ -15,7 +17,11 @@ const Catalog: FC<CatalogProps> = () => {
 
     return (
         <div className={styles.Catalog} data-testid="Catalog">
-            Catalog Component
+            <React.Fragment>
+                {catalog && catalog.map((book: BookType) => (
+                    <Book key={book.id} book={book} />
+                ))}
+            </React.Fragment>
         </div>
     );
 }

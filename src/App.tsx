@@ -17,7 +17,7 @@ const App: FC<AppProps> = (props: AppProps) => {
     return (
         <div className="App">
             <Header isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated}/>
-            {isAuthenticated && <Catalog />}
+            <Catalog />
         </div>
     );
 
